@@ -1,0 +1,11 @@
+* Wed Sep 11 2013 Jarko Vihriala <jarko.vihriala@jollamobile.com> - 0.6.0
+- add missing files to spec
+
+* Wed Sep 11 2013 Jarko Vihriala <jarko.vihriala@jollamobile.com> - 0.6.0
+- fix version info from spec file
+
+* Wed Sep 11 2013 Jarko Vihriala <jarko.vihriala@jollamobile.com> - 0.6.0
+- patch rubygems_requires macro not to pull in ruby19 package.
+
+* Wed Sep 11 2013 Jarko Vihriala <jarko.vihriala@jollamobile.com> - 0.6.0
+- Initial commit 
