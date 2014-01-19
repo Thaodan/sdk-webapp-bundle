@@ -18,12 +18,14 @@ Summary:        Gems needed to run sdk-webapp
 
 This package is the bundle of gems needed to run the Mer SDK webapp.
 
+%define debug_package %{nil}
+
 %prep
 %setup -q -n %{name}-%{version}
 
 %build
 mkdir -p vendor/cache
-cp -a *.gem vendor/cache
+cp -a gems/*.gem vendor/cache
 
 %install
 rm -rf %{buildroot}
