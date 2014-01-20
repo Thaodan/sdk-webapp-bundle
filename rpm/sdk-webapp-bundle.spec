@@ -39,8 +39,8 @@ cp -a vendor %{buildroot}/usr/lib/%{name}/
 # Change #!/usr/local/bin/ruby to #!/usr/bin/ruby
 fgrep -rl "usr/local/bin" %{buildroot} | xargs --no-run-if-empty sed -i -e 's_/usr/local/bin_/%{_bindir}_'g
 
-# Change ../../../../../BUILD to {%_libdir}/%{name}
-fgrep -rl "../../../../../BUILD" %{buildroot} | xargs --no-run-if-empty sed -i -e 's_../../../../../BUILD_%{_libdir}/%{name}_'g
+# Change ../../../../../BUILD/%{name}-%{version} to {%_libdir}/%{name}
+fgrep -rl "../../../../../BUILD/%{name}-%{version}" %{buildroot} | xargs --no-run-if-empty sed -i -e 's_../../../../../BUILD/%{name}-%{version}_%{_libdir}/%{name}_'g
 
 # Remove references to buildroot
 fgrep -rl "%{buildroot}" %{buildroot} | xargs --no-run-if-empty sed -i -e 's_%{buildroot}__'g
