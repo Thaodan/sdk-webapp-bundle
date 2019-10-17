@@ -9,7 +9,7 @@ License:        GPLv2+ or Ruby (see gems)
 BuildRequires:  rubygems_with_buildroot_patch
 %rubygems_requires
 # This is the BR for all enclosed gems
-BuildRequires:  rubygem-bundler git gcc-c++ openssl-devel pkgconfig
+BuildRequires:  rubygem-bundler gcc-c++ openssl-devel pkgconfig
 Requires:       rubygem-bundler
 URL:            https://wiki.merproject.org/wiki/Platform_SDK
 Source0:        %{name}-%{version}.tar.bz2
