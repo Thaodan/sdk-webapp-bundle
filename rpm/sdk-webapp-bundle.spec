@@ -13,6 +13,7 @@ BuildRequires:  rubygem-bundler gcc-c++ openssl-devel pkgconfig
 Requires:       rubygem-bundler
 URL:            https://wiki.merproject.org/wiki/Platform_SDK
 Source0:        %{name}-%{version}.tar.bz2
+Source99:       sdk-webapp-bundle.rpmlintrc
 Summary:        Gems needed to run sdk-webapp
 %description
 
