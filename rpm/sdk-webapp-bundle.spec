@@ -1,4 +1,3 @@
-%{!?rubygems_requires:%define rubygems_requires Requires:ruby}
 
 Name:           sdk-webapp-bundle
 Summary:        Bundle of gems used by sdk-webapp
@@ -6,10 +5,8 @@ Version:        0.6.0+sdk
 Release:        1
 Group:          Development/Languages/Ruby
 License:        GPLv2+ or Ruby (see gems)
-BuildRequires:  rubygems_with_buildroot_patch
-%rubygems_requires
 # This is the BR for all enclosed gems
-BuildRequires:  rubygem-bundler gcc-c++ openssl-devel pkgconfig
+BuildRequires:  rubygem-bundler gcc-c++ openssl-devel pkgconfig ruby
 Requires:       rubygem-bundler
 URL:            https://wiki.merproject.org/wiki/Platform_SDK
 Source0:        %{name}-%{version}.tar.bz2
