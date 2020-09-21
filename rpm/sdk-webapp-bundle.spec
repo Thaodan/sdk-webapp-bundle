@@ -6,7 +6,6 @@ Version:        0.6.0+sdk
 Release:        1
 Group:          Development/Languages/Ruby
 License:        GPLv2+ or Ruby (see gems)
-BuildRequires:  rubygems_with_buildroot_patch
 %rubygems_requires
 # This is the BR for all enclosed gems
 BuildRequires:  rubygem-bundler gcc-c++ openssl-devel pkgconfig
